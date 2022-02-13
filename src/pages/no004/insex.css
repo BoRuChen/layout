@@ -1,0 +1,34 @@
+.no004{
+    width: 1200px;
+    margin: auto;
+    background: linear-gradient(20deg,#3d5491,#1aa2a0) fixed center center / 100% 100%;
+}
+
+.no004 .item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.no004 .item img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.no004 .item .pic{
+    width: 55%;
+    flex-shrink: 0;
+}
+
+.no004 .item .txt{
+    width: 55%;
+    background: rgb(255, 203, 179 ,0.6);
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    z-index: 1;
+}
+
+.no004 .item > :first-child{
+    margin-right: -10%;
+}

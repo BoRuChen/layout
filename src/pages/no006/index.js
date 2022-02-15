@@ -1,11 +1,12 @@
 import './index.scss';
+import {Link} from "react-router-dom";
 
 
 
 export const No006 = () => {
     const lists = ['項目一','項目二','項目三'];
     return(
-        <div className="no007">
+        <div className="no006">
             <div className='container'>
                 <FooterItem title={'關於課程'} lists={lists}/>
                 <FooterItem title={'課程列表'} lists={lists}/>
@@ -21,6 +22,7 @@ export const No006 = () => {
             <div className="copyright">
                 Copyright &copy; 2022 內容內容內容內容內容內容
             </div>
+            <Link className={'next-btn'} to={'/No007'} >下一個切版</Link>
         </div>
     )
 }

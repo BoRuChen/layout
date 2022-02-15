@@ -1,8 +1,75 @@
 .no007{
+  .main-header{
+    background: linear-gradient(0deg ,#D200D2,#0000C6);
+  }
+  .container{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    align-items: center;
+    width: 1200px;
 
-  .item{
-    width: 100%;
-    height: 100vh;
-    background: #1aa2a0;
+    .main-nav{
+      margin: auto;
+      display: flex;
+
+      a{
+        display: block;
+        color: #fff;
+        margin: 0 1px;
+        text-decoration: none;
+        padding: 5px 1em;
+        position: relative;
+        transform: translateY(0px);
+        transition: .3s;
+
+        &:after{
+          content: '';
+          position: absolute;
+          border-bottom: 1px solid #fff;
+          top:0;
+          bottom: -5px;
+          left: 50%;
+          right: 50%;
+          transition: .3s;
+        }
+        &:hover{
+          transform: translateY(-5px);
+
+          &:after{
+            left: 0;
+            right: 0;
+          }
+        }
+      }
+    }
+
+    .logo{
+      width: 100px;
+      img{
+        width: 100%;
+        vertical-align: middle;
+      }
+    }
+
+    .header-search{
+      display: flex;
+
+      input,button{
+        border: none;
+        background-color: #fff;
+        padding: 5px 10px;
+      }
+
+      input{
+        border-radius: 200px 0 0 200px;
+      }
+
+      button{
+        border-radius: 0 200px 200px 0;
+      }
+
+
+    }
   }
 }
